@@ -3,7 +3,7 @@ We built a recommender system model that uses the power of boosting and NLP appl
 The first stage is a collaborative filtering model using the matrix of ratings while the second stage is a multinomial model using text information to model the residuals from the first stage. These two stages combined together in an ensemble is used as a base estimator for our model. 
 More specifically, the ensemble model consist of two classifiers :
 
-• Collaborative filtering recommender that incorporates temporal effects as in Koren and Bell (2011) with a little change where rating are considered a class of 5 categories (1through 5).
+• Collaborative filtering recommender that incorporates temporal effects as in Koren and Bell (2011) with a little change where rating are considered a class of 5 categories (1through 5). We use some of the implementation of https://github.com/rudolfsteiner/CollaborativeFilteringV3.git with appropriate modifications.
 
 • A 5-class multinomial model that incorporates features derived from user feedback by leveraging BERT. BERT, a pre-trained model, transforms written item reviews into numeric vectors, capturing contextual information about user experiences. These vectors, combined with user-provided ratings, are used as features to enhance the model’s predictive capabilities. In this case we used ’bert-base-uncased’ with 12 layers.
 
