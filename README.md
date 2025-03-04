@@ -1,2 +1,2 @@
 # RecommenderModel
-Recommender system model that uses an ensemble model(combining collaborative filtering and a multinomial models) as base estimator and uses the power of boosting to predict ratings.
+We built a recommender system model that uses the power of boosting and NLP applications to predict user's ratings on items. 
