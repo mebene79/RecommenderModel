@@ -7,4 +7,5 @@ More specifically, the ensemble model consist of two classifiers :
 
 • A 5-class multinomial model that incorporates features derived from user feedback by leveraging BERT. BERT, a pre-trained model, transforms written item reviews into numeric vectors, capturing contextual information about user experiences. These vectors, combined with user-provided ratings, are used as features to enhance the model’s predictive capabilities. In this case we used ’bert-base-uncased’ with 12 layers.
 
-In summary  our model is a recommender system that applies Logistboost and sequentially uses the two-stage ensemble model as its base estimator.
+In summary  our model is a recommender system that applies Logistboost and sequentially uses the two-stage ensemble model as its base estimator. The dataset used in this project consists of Amazon products(items) that are rated by customers who bought the products. It includes reviews (ratings, text) and product metadata (descriptions, categories,
+etc.). There have been many updated versions of the dataset over the years. The latest version is 2023. We used the earliest version of 2014 prepocessed in  https://github.com/rudolfsteiner/CollaborativeFilteringV3.git . 
